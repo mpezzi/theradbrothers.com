@@ -1,16 +1,11 @@
-import CMS from 'netlify-cms-app'
-import uploadcare from 'netlify-cms-media-library-uploadcare'
-import cloudinary from 'netlify-cms-media-library-cloudinary'
+import CMS from "netlify-cms-app";
 
-import AboutPagePreview from './preview-templates/AboutPagePreview'
-import BlogPostPreview from './preview-templates/BlogPostPreview'
-import ProductPagePreview from './preview-templates/ProductPagePreview'
-import IndexPagePreview from './preview-templates/IndexPagePreview'
+import DrinkPreview from "./templates/DrinkPreview";
+import BeerPreview from "./templates/BeerPreview";
+import EventPreview from "./templates/EventPreview";
+import FoodPreview from "./templates/FoodPreview";
 
-CMS.registerMediaLibrary(uploadcare)
-CMS.registerMediaLibrary(cloudinary)
-
-CMS.registerPreviewTemplate('index', IndexPagePreview)
-CMS.registerPreviewTemplate('about', AboutPagePreview)
-CMS.registerPreviewTemplate('products', ProductPagePreview)
-CMS.registerPreviewTemplate('blog', BlogPostPreview)
+CMS.registerPreviewTemplate("drink", DrinkPreview);
+CMS.registerPreviewTemplate("beer", BeerPreview);
+CMS.registerPreviewTemplate("event", EventPreview);
+CMS.registerPreviewTemplate("food", FoodPreview);
