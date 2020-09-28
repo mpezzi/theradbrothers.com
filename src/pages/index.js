@@ -1,25 +1,30 @@
-import React from "react";
-import Layout from "../components/Layout";
-import Seo from "../components/Seo";
-import Header from "../components/Header";
-import Intro from "../components/Intro";
-import EventSection from "../components/EventSection";
-import FoodSection from "../components/FoodSection";
-import DrinkSection from "../components/DrinkSection";
-import BeerSection from "../components/BeerSection";
-import ContactSection from "../components/ContactSection";
+import React from 'react';
+import Layout from '../components/Layout';
+import Seo from '../components/Seo';
+import SliderSection from '../components/SliderSection';
+import IntroSection from '../components/IntroSection';
+import AboutSection from '../components/AboutSection';
+// import ServiceSection from '../components/ServiceSection';
+import FoodSection from '../components/FoodSection';
+import DrinkSection from '../components/DrinkSection';
+import GallerySection from '../components/GallerySection';
+import CounterSection from '../components/CounterSection';
+import EventSection from '../components/EventSection';
+// import ContactSection from '../components/ContactSection';
 
 const IndexPage = () => {
   return (
     <Layout>
       <Seo />
-      <Header />
-      <Intro />
-      <EventSection />
+      <SliderSection />
+      <IntroSection />
+      <AboutSection />
+      {/* <ServiceSection /> */}
       <FoodSection />
       <DrinkSection />
-      <BeerSection />
-      <ContactSection />
+      <GallerySection />
+      <CounterSection />
+      <EventSection />
     </Layout>
   );
 };

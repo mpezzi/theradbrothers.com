@@ -7,6 +7,17 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Poppins:300,400,500,600,700`,
+          `Josefin+Sans`,
+          `Nothing+You+Could+Do`
+        ],
+        display: 'swap'
+      }
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/pages`,
@@ -41,13 +52,13 @@ module.exports = {
         name: `beer`
       }
     },
-    // {
-    //   resolve: "gatsby-source-filesystem",
-    //   options: {
-    //     path: `${__dirname}/src/img`,
-    //     name: "images",
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `sliders`,
+        path: `${__dirname}/src/sliders`
+      }
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {

@@ -1,5 +1,5 @@
-import React from "react";
-import FoodListItem from "./FoodListItem";
+import React from 'react';
+import FoodListItem from './FoodListItem';
 
 const FoodList = ({ nodes }) => {
   return (
@@ -10,7 +10,7 @@ const FoodList = ({ nodes }) => {
           title: node.childMarkdownRemark.frontmatter.title,
           image: node.childMarkdownRemark.frontmatter.image,
           price: node.childMarkdownRemark.frontmatter.price,
-          body: node.childMarkdownRemark.html,
+          body: node.childMarkdownRemark.html
         };
         return <FoodListItem item={item} index={i} key={item.id} />;
       })}

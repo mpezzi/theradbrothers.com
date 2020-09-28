@@ -1,24 +1,19 @@
-import React from "react";
-import cx from "classnames";
+import React from 'react';
+import cx from 'classnames';
 
-const FoodListItem = ({ item, index }) => {
+const FoodListItem = ({ item }) => {
   return (
-    <div className="col-md-4 col-sm-12 py-3">
-      <div
-        className={cx("text-center", "h-100", "project", {
-          "bg-black": index % 2 === 0,
-          "bg-secondary": index % 2 !== 0,
-        })}
-      >
-        <div className="d-flex h-100">
-          <div className="project-text w-100 my-auto text-center text-lg-left">
-            <h4 className="text-white">{item.title}</h4>
-            <div
-              className="mb-0 text-white-50"
-              dangerouslySetInnerHTML={{ __html: item.body }}
-            />
-            <hr className="d-none d-lg-block mb-2 ml-0" />
-            <div className="mb-0 text-white-50">{item.price}</div>
+    <div className="col-md-6">
+      <div className="pricing-entry d-flex">
+        <div className="desc pl-3">
+          <div className="d-flex text align-items-center">
+            <h3>
+              <span>{item.title}</span>
+            </h3>
+            <span className="price">{item.price}</span>
+          </div>
+          <div className="d-block">
+            <p dangerouslySetInnerHTML={{ __html: item.body }}></p>
           </div>
         </div>
       </div>

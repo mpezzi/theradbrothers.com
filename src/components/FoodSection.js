@@ -1,23 +1,19 @@
-import React from "react";
-import FoodListContainer from "../components/FoodListContainer";
+import React from 'react';
+import FoodListContainer from '../components/FoodListContainer';
 
 const FoodSection = () => {
   return (
-    <section id="menu" className="projects-section bg-light">
+    <section className="ftco-section">
       <div className="container">
-        <div className="row align-items-center no-gutters mb-3">
-          <div className="col-xl-8 col-lg-8">
-            <img
-              className="img-fluid mb-3 mb-lg-0"
-              src="img/menu.jpg"
-              alt="Menu"
-            />
-          </div>
-          <div className="col-xl-4 col-lg-4">
-            <div className="featured-text text-center text-lg-left">
-              <h4>Menu</h4>
-              <p className="text-black-50 mb-0">Feeling hungry?</p>
-            </div>
+        <div className="row justify-content-center mb-5 pb-3 mt-5 pt-5">
+          <div className="col-md-7 heading-section text-center">
+            <h2 className="mb-4">Food Menu</h2>
+            <p className="flip">
+              <span className="deg1"></span>
+              <span className="deg2"></span>
+              <span className="deg3"></span>
+            </p>
+            <p className="mt-5">Pick from our delicious food menu.</p>
           </div>
         </div>
         <FoodListContainer />
