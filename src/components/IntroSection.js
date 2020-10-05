@@ -7,8 +7,17 @@ const IntroSection = () => (
     <div className="container-wrap">
       <div className="wrap d-md-flex">
         <div className="info">
+          <a
+            className="logo d-block d-md-none"
+            href="/"
+            style={{
+              backgroundImage: 'url(images/logo-small.png)'
+            }}
+          >
+            The Rad Brothers
+          </a>
           <div className="row no-gutters">
-            <div className="col-md-4 d-flex">
+            <div className="col-md-4 d-flex mb-2">
               <div className="icon">
                 <span className="icon-phone"></span>
               </div>
@@ -21,7 +30,7 @@ const IntroSection = () => (
                 <p>Phone</p>
               </div>
             </div>
-            <div className="col-md-4 d-flex">
+            <div className="col-md-4 d-flex mb-2">
               <div className="icon">
                 <span className="icon-my_location"></span>
               </div>
@@ -37,7 +46,7 @@ const IntroSection = () => (
                 <p>Milton, ON L9T 5E4</p>
               </div>
             </div>
-            <div className="col-md-4 d-flex">
+            <div className="col-md-4 d-flex mb-2">
               <div className="icon">
                 <span className="icon-clock-o"></span>
               </div>

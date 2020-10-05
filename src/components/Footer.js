@@ -46,26 +46,18 @@ const Footer = () => {
                     </span>
                   </li>
                   <li>
-                    <a href="blank.html">
+                    <a className="text-white" href="tel:+19058751119">
                       <span className="icon icon-phone"></span>
-                      <span className="text">
-                        <a className="text-white" href="tel:+19058751119">
-                          905-875-1119
-                        </a>
-                      </span>
+                      <span className="text">905-875-1119</span>
                     </a>
                   </li>
                   <li>
-                    <a href="blank.html">
+                    <a
+                      className="text-white"
+                      href="mailto:theradbrothers@gmail.com"
+                    >
                       <span className="icon icon-envelope"></span>
-                      <span className="text">
-                        <a
-                          className="text-white"
-                          href="mailto:theradbrothers@gmail.com"
-                        >
-                          theradbrothers@gmail.com
-                        </a>
-                      </span>
+                      <span className="text">theradbrothers@gmail.com</span>
                     </a>
                   </li>
                 </ul>

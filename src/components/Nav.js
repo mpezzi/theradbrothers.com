@@ -22,16 +22,9 @@ const Nav = () => {
       id="ftco-navbar"
     >
       <div className="container">
-        {/* <a
-          className="navbar-brand d-sm-block d-md-none"
-          href="index.html"
-          style={{ backgroundImage: 'url(images/logo-small.png)' }}
-        >
-          {site.siteMetadata.title}
-        </a> */}
         <a
           className="navbar-brand"
-          href="index.html"
+          href="/"
           style={{ backgroundImage: 'url(images/logo.png)' }}
         >
           {site.siteMetadata.title}
