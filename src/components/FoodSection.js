@@ -3,7 +3,7 @@ import FoodListContainer from '../components/FoodListContainer';
 
 const FoodSection = () => {
   return (
-    <section className="ftco-section">
+    <section className="ftco-section" id="food">
       <div className="container">
         <div className="row justify-content-center mb-5 pb-3 mt-5 pt-5">
           <div className="col-md-7 heading-section text-center">

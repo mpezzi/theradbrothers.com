@@ -3,23 +3,20 @@ import EventListItem from './EventListItem';
 
 const EventList = ({ nodes }) => {
   return (
-    <>
-      {
-        nodes.map((node, i) => {
+    <div className="row d-flex">
+      {nodes.map((node, i) => {
+        const item = {
+          id: node.id,
+          title: node.childMarkdownRemark.frontmatter.title,
+          image: node.childMarkdownRemark.frontmatter.image,
+          date: node.childMarkdownRemark.frontmatter.date,
+          body: node.childMarkdownRemark.html
+        };
 
-          const item = {
-            id: node.id,
-            title: node.childMarkdownRemark.frontmatter.title,
-            image: node.childMarkdownRemark.frontmatter.image,
-            body: node.childMarkdownRemark.html,
-          };
-
-          return <EventListItem item={item} index={i} key={item.id} />
-
-        })
-      }
-    </>
+        return <EventListItem item={item} index={i} key={item.id} />;
+      })}
+    </div>
   );
-}
+};
 
 export default EventList;

@@ -3,7 +3,7 @@ import EventListContainer from '../components/EventListContainer';
 
 const EventSection = () => {
   return (
-    <section className="ftco-section">
+    <section className="ftco-section" id="events">
       <div className="container">
         <div className="row justify-content-center mb-5 pb-3">
           <div className="col-md-7 heading-section text-center">
@@ -11,7 +11,8 @@ const EventSection = () => {
             <p>Check out the events coming up</p>
           </div>
         </div>
-        <div className="row d-flex">
+        <EventListContainer />
+        {/* <div className="row d-flex">
           <div className="col-md-4 d-flex">
             <div className="blog-entry align-self-stretch">
               <a
@@ -105,7 +106,7 @@ const EventSection = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
     // <section id="events" className="projects-section bg-light">

@@ -18,16 +18,23 @@ const Nav = () => {
 
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
+      className="navbar navbar-expand-md navbar-dark ftco_navbar bg-dark ftco-navbar-light d-none d-md-block"
       id="ftco-navbar"
     >
       <div className="container">
+        {/* <a
+          className="navbar-brand d-sm-block d-md-none"
+          href="index.html"
+          style={{ backgroundImage: 'url(images/logo-small.png)' }}
+        >
+          {site.siteMetadata.title}
+        </a> */}
         <a
           className="navbar-brand"
           href="index.html"
           style={{ backgroundImage: 'url(images/logo.png)' }}
         >
-          The Rad Brothers
+          {site.siteMetadata.title}
         </a>
         <button
           className="navbar-toggler"
@@ -43,32 +50,27 @@ const Nav = () => {
         <div className="collapse navbar-collapse" id="ftco-nav">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
-              <a href="index.html" className="nav-link">
-                Home
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="menu.html" className="nav-link">
-                Menu
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="services.html" className="nav-link">
-                Services
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="blog.html" className="nav-link">
-                Blog
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="about.html" className="nav-link">
+              <a href="#about" className="nav-link">
                 About
               </a>
             </li>
             <li className="nav-item">
-              <a href="contact.html" className="nav-link">
+              <a href="#food" className="nav-link">
+                Food
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="#drinks" className="nav-link">
+                Drinks
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="#events" className="nav-link">
+                Events
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="#contact" className="nav-link">
                 Contact
               </a>
             </li>

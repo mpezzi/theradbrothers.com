@@ -3,7 +3,7 @@ import React from 'react';
 import './AboutSection.scss';
 
 const AboutSection = () => (
-  <section className="ftco-about d-md-flex">
+  <section className="ftco-about d-md-flex" id="about">
     <div
       className="one-half img"
       style={{ backgroundImage: 'url(images/about.jpg)' }}
