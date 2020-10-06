@@ -6,7 +6,7 @@ const AboutSection = () => (
   <section className="ftco-about d-md-flex" id="about">
     <div
       className="one-half img"
-      style={{ backgroundImage: 'url(images/about.jpg)' }}
+      style={{ backgroundImage: 'url(images/slider-6.jpg)' }}
     ></div>
     <div className="one-half info">
       <div className="heading-section ">

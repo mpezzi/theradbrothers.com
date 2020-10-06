@@ -5,9 +5,9 @@ import SliderSection from '../components/SliderSection';
 import IntroSection from '../components/IntroSection';
 import AboutSection from '../components/AboutSection';
 import FoodSection from '../components/FoodSection';
-import DrinkSection from '../components/DrinkSection';
+// import DrinkSection from '../components/DrinkSection';
 import GallerySection from '../components/GallerySection';
-import CounterSection from '../components/CounterSection';
+// import CounterSection from '../components/CounterSection';
 import EventSection from '../components/EventSection';
 
 const IndexPage = () => {
@@ -18,9 +18,9 @@ const IndexPage = () => {
       <IntroSection />
       <AboutSection />
       <FoodSection />
-      <DrinkSection />
+      {/* <DrinkSection /> */}
       <GallerySection />
-      <CounterSection />
+      {/* <CounterSection /> */}
       <EventSection />
     </Layout>
   );
