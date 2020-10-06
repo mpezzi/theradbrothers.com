@@ -13,9 +13,7 @@ const EventListItem = ({ item, index }) => {
         />
         <div className="text py-4 d-block">
           <div className="meta">
-            <div>
-              <a href="blank.html">{dayjs(item.date).format('MMM DD, YYYY')}</a>
-            </div>
+            <div>{dayjs(item.date).format('MMM DD, YYYY')}</div>
           </div>
           <h3 className="heading mt-2">{item.title}</h3>
           <div dangerouslySetInnerHTML={{ __html: item.body }}></div>
