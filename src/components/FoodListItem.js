@@ -1,5 +1,4 @@
 import React from 'react';
-import cx from 'classnames';
 
 const FoodListItem = ({ item }) => {
   return (
@@ -13,7 +12,9 @@ const FoodListItem = ({ item }) => {
             <span className="price">{item.price}</span>
           </div>
           <div className="d-block">
-            <p dangerouslySetInnerHTML={{ __html: item.body }}></p>
+            <p
+              dangerouslySetInnerHTML={{ __html: `<div>${item.body}</div>` }}
+            />
           </div>
         </div>
       </div>
