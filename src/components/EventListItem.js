@@ -18,7 +18,7 @@ const EventListItem = ({ item, index }) => {
             </div>
           </div>
           <h3 className="heading mt-2">{item.title}</h3>
-          <p dangerouslySetInnerHTML={{ __html: `<div>${item.body}</div>` }} />
+          <div dangerouslySetInnerHTML={{ __html: item.body }}></div>
         </div>
       </div>
     </div>

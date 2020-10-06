@@ -15,8 +15,8 @@ const BeerListItem = ({ item, index }) => {
             <h4 className="text-white">{item.title}</h4>
             <div
               className="mb-0 text-white-50"
-              dangerouslySetInnerHTML={{ __html: `<div>${item.body}</div>` }}
-            />
+              dangerouslySetInnerHTML={{ __html: item.body }}
+            ></div>
             <hr className="d-none d-lg-block mb-2 ml-0" />
             <div className="mb-0 text-white-50">{item.price}</div>
           </div>

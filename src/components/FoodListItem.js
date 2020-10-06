@@ -12,9 +12,7 @@ const FoodListItem = ({ item }) => {
             <span className="price">{item.price}</span>
           </div>
           <div className="d-block">
-            <p
-              dangerouslySetInnerHTML={{ __html: `<div>${item.body}</div>` }}
-            />
+            <div dangerouslySetInnerHTML={{ __html: item.body }}></div>
           </div>
         </div>
       </div>
