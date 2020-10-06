@@ -13,7 +13,7 @@ import EventSection from '../components/EventSection';
 const IndexPage = () => {
   return (
     <Layout>
-      <Seo />
+      <Seo title="Sports Bar &amp; Tap House" />
       <SliderSection />
       <IntroSection />
       <AboutSection />
