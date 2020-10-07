@@ -7,7 +7,7 @@ const GallerySection = () => (
         <div className="col-md-3">
           <div
             className="gallery img d-flex align-items-center"
-            style={{ backgroundImage: 'url(images/slider-1.jpg)' }}
+            style={{ backgroundImage: 'url(images/gallery-1.jpg)' }}
           >
             <div className="icon mb-4 d-flex align-items-center justify-content-center">
               <span className="icon-search"></span>
@@ -17,7 +17,7 @@ const GallerySection = () => (
         <div className="col-md-3">
           <div
             className="gallery img d-flex align-items-center"
-            style={{ backgroundImage: 'url(images/slider-2.jpg)' }}
+            style={{ backgroundImage: 'url(images/gallery-2.jpg)' }}
           >
             <div className="icon mb-4 d-flex align-items-center justify-content-center">
               <span className="icon-search"></span>
@@ -27,7 +27,7 @@ const GallerySection = () => (
         <div className="col-md-3">
           <div
             className="gallery img d-flex align-items-center"
-            style={{ backgroundImage: 'url(images/slider-3.jpg)' }}
+            style={{ backgroundImage: 'url(images/gallery-3.jpg)' }}
           >
             <div className="icon mb-4 d-flex align-items-center justify-content-center">
               <span className="icon-search"></span>
@@ -37,7 +37,7 @@ const GallerySection = () => (
         <div className="col-md-3">
           <div
             className="gallery img d-flex align-items-center"
-            style={{ backgroundImage: 'url(images/slider-4.jpg)' }}
+            style={{ backgroundImage: 'url(images/gallery-4.jpg)' }}
           >
             <div className="icon mb-4 d-flex align-items-center justify-content-center">
               <span className="icon-search"></span>
