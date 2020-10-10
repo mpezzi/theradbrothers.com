@@ -53,8 +53,18 @@ const Nav = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a href="#drinks" className="nav-link">
-                Drinks
+              <a href="#draught" className="nav-link">
+                Draughts
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="#bottle" className="nav-link">
+                Bottles
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="#cocktail" className="nav-link">
+                Cocktails
               </a>
             </li>
             <li className="nav-item">

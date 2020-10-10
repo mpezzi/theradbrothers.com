@@ -1,11 +1,13 @@
-import CMS from "netlify-cms-app";
+import CMS from 'netlify-cms-app';
 
-import DrinkPreview from "./templates/DrinkPreview";
-import BeerPreview from "./templates/BeerPreview";
-import EventPreview from "./templates/EventPreview";
-import FoodPreview from "./templates/FoodPreview";
+import DraughtPreview from './templates/DraughtPreview';
+import BottlePreview from './templates/BottlePreview';
+import CocktailPreview from './templates/CocktailPreview';
+import EventPreview from './templates/EventPreview';
+import FoodPreview from './templates/FoodPreview';
 
-CMS.registerPreviewTemplate("drink", DrinkPreview);
-CMS.registerPreviewTemplate("beer", BeerPreview);
-CMS.registerPreviewTemplate("event", EventPreview);
-CMS.registerPreviewTemplate("food", FoodPreview);
+CMS.registerPreviewTemplate('draught', DraughtPreview);
+CMS.registerPreviewTemplate('bottle', BottlePreview);
+CMS.registerPreviewTemplate('cocktail', CocktailPreview);
+CMS.registerPreviewTemplate('event', EventPreview);
+CMS.registerPreviewTemplate('food', FoodPreview);

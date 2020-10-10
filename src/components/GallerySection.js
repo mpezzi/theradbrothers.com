@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './GallerySection.scss';
+
 const GallerySection = () => (
   <section className="ftco-gallery">
     <div className="container-wrap">

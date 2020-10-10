@@ -47,15 +47,22 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/contents/drink`,
-        name: `drink`
+        path: `${__dirname}/src/contents/draught`,
+        name: `draught`
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/contents/beer`,
-        name: `beer`
+        path: `${__dirname}/src/contents/bottle`,
+        name: `bottle`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/contents/cocktail`,
+        name: `cocktail`
       }
     },
     {
