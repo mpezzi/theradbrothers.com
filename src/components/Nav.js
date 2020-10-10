@@ -23,7 +23,7 @@ const Nav = () => {
     >
       <div className="container">
         <a
-          className="navbar-brand"
+          className="navbar-brand d-none d-lg-block"
           href="/"
           style={{ backgroundImage: 'url(images/logo.png)' }}
         >
@@ -41,7 +41,7 @@ const Nav = () => {
           <span className="oi oi-menu"></span> Menu
         </button>
         <div className="collapse navbar-collapse" id="ftco-nav">
-          <ul className="navbar-nav ml-auto">
+          <ul className="navbar-nav mx-auto mr-lg-0">
             <li className="nav-item active">
               <a href="#about" className="nav-link">
                 About

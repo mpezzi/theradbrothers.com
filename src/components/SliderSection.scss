@@ -1,5 +1,11 @@
 .ftco-slider {
   position: relative;
-  height: 45vh;
+  height: 250px;
   overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .ftco-slider {
+    height: 45vh;
+  }
 }
