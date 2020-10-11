@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'The Rad Brothers',
-    description: 'Sports Bar & Tap House'
+    description: 'Come out and enjoy our fusion of sports and entertainment. Paired with a great menu, friendly staff and a unique selections of beers on tap. The Rad Brothers will bring something new each and every week.'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
