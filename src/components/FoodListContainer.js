@@ -1,10 +1,10 @@
-import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import FoodList from "./FoodList";
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import FoodList from './FoodList';
 
 const FoodListContainer = () => {
   const {
-    allFile: { nodes },
+    allFile: { nodes }
   } = useStaticQuery(
     graphql`
       query FoodListContainerQuery {
@@ -14,13 +14,6 @@ const FoodListContainer = () => {
             childMarkdownRemark {
               frontmatter {
                 title
-                image {
-                  childImageSharp {
-                    fluid(maxWidth: 400, maxHeight: 250) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
                 price
               }
               html

@@ -14,13 +14,6 @@ const CocktailListContainer = () => {
             childMarkdownRemark {
               frontmatter {
                 title
-                image {
-                  childImageSharp {
-                    fluid(maxWidth: 400, maxHeight: 250) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
                 price
               }
               html
@@ -30,7 +23,6 @@ const CocktailListContainer = () => {
       }
     `
   );
-
   return <CocktailList nodes={nodes} />;
 };
 

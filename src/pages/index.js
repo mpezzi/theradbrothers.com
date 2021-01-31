@@ -10,7 +10,7 @@ import BottleSection from '../components/BottleSection';
 import CocktailSection from '../components/CocktailSection';
 import GallerySection from '../components/GallerySection';
 // import CounterSection from '../components/CounterSection';
-import EventSection from '../components/EventSection';
+// import EventSection from '../components/EventSection';
 
 const IndexPage = () => {
   return (
@@ -25,7 +25,7 @@ const IndexPage = () => {
       <CocktailSection />
       <GallerySection />
       {/* <CounterSection /> */}
-      <EventSection />
+      {/* <EventSection /> */}
     </Layout>
   );
 };

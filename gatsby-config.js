@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'The Rad Brothers',
-    description: 'Come out and enjoy our fusion of sports and entertainment. Paired with a great menu, friendly staff and a unique selections of beers on tap. The Rad Brothers will bring something new each and every week.'
+    description:
+      'Come out and enjoy our fusion of sports and entertainment. Paired with a great menu, friendly staff and a unique selections of beers on tap. The Rad Brothers will bring something new each and every week.'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -15,8 +16,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://theradbrothers.com`,
-      },
+        siteUrl: `https://theradbrothers.com`
+      }
     },
     {
       resolve: `gatsby-plugin-google-fonts`,
@@ -40,42 +41,47 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/contents/event`,
-        name: `event`
+        name: `event`,
+        ignore: [`**/\.*`]
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/contents/food`,
-        name: `food`
+        name: `food`,
+        ignore: [`**/\.*`]
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/contents/draught`,
-        name: `draught`
+        name: `draught`,
+        ignore: [`**/\.*`]
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/contents/bottle`,
-        name: `bottle`
+        name: `bottle`,
+        ignore: [`**/\.*`]
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/contents/cocktail`,
-        name: `cocktail`
+        name: `cocktail`,
+        ignore: [`**/\.*`]
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `sliders`,
-        path: `${__dirname}/src/sliders`
+        path: `${__dirname}/src/sliders`,
+        name: `sliders`
       }
     },
     {
