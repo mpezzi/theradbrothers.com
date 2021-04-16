@@ -9,7 +9,7 @@ const FoodListItem = ({ item }) => {
             <h3>
               <span>{item.title}</span>
             </h3>
-            <span className="price">{item.price}</span>
+            <span className="price">{item.price ? item.price : null}</span>
           </div>
           <div className="d-block">
             <div dangerouslySetInnerHTML={{ __html: item.body }}></div>
